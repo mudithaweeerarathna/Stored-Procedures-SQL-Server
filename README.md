@@ -36,4 +36,4 @@ in this userAccount table is UserId.
 |Id          |      int |
 |UserId      |      int |
 |AccountNumber | varchar(50) |
-|CashAmount | decimal(18, 0) |
+|CashAmount | decimal(18, 2) |
