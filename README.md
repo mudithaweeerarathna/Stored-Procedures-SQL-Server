@@ -87,7 +87,7 @@ and read the data in the [User] table. Stored procedures can be explained as fol
   using this stored procedure and by using the ID number of the user within the table.
 </ul>
 
-## Create-StoredProcedures #Branch
+## Execute-StoredProcedures #Branch
 
 This branch contains the tables, the stored procedures, and a.sql file that contains the execute statement for the stored procedures. 
 By using the statement given in this file, we can execute the above-mentioned stored procedures. <br> <br> We can add a new user to the [User] table using the 
