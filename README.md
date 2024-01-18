@@ -26,17 +26,14 @@ All the things are separated into each branch as follows.
   file to execute queries successfully.
 </ul>
 
-
-## #Branch Create-Table
-First we create the tables needed for this stored procedure blog post example.
-The queries needed for this table creation are in the #branch Table-Creation
-We create Two tables for this repository named as [User] and [UserBankAccount].
-Table Structure looks like follows
+## Create-Table #Branch
+The create table branch contains the queries that are needed to create the table. There are two files named User.sql and UserBankAccount.sql 
+that contain two queries that are used to create the tables in the database. These two files contain just the queries that are needed to create 
+the tables; they are not stored procedures. These two tables are just two tables that are used to store user details and the user’s bank details within a database. 
 
 <h4>User Table</h4>
-User table holds the detils of the user in the system. There are four columns in the table 
-and Id is the primary key of this table while it's set to the auto increment one by one when 
-user data is entered into the table.
+The [user] table contains four columns, just as shown as follows: Id is the primary key of the user table, and it is set to auto-increment the 
+value when a record is inserted into the table. <br>
 
 | Id  | Name    | Age| DateOfBirth |
 |-----|---------|----|-------------|
@@ -49,10 +46,10 @@ user data is entered into the table.
 |Age | int |
 |DateOfBirth | datetime |
 
-<h4>UserAccount Table</h4>
-UserAccount table holds the details of the bank account details of the user and this table also 
-have four columns and the primary key of this table is Id while the foreign key to the user table 
-in this userAccount table is UserId.
+<h4>UserBankAccount Table</h4>
+The [UserBankAccount] table contains just four columns that store the UserId, AccountNumber, and the available cash amount in the account. 
+Just like the [User] table, the primary key of this [UserBankAccount] table is ID. This table contains a foreign key as UserId, which 
+has a relationship with the User table’s ID column. <br>
 
 | Id | UserId | AccountNumber | CashAmount |
 |----|--------|---------------|------------|
@@ -64,3 +61,45 @@ in this userAccount table is UserId.
 |UserId      |      int |
 |AccountNumber | varchar(50) |
 |CashAmount | decimal(18, 2) |
+
+## Create-StoredProcedures #Branch
+This branch contains the stored procedures themselves. This blog explains the creation of stored procedures in detail, while there is a small 
+explanation of the stored procedure creation inside of each.sql file located within this branch. There are four stored procedures to save, update, 
+and read the data in the [User] table. Stored procedures can be explained as follows:
+
+<ul>
+  <li><b>Get_AllUsers</b></li>
+  This stored procedure is used to get the details of all of the users in the table. That means if there are 100 users in the table, Details 
+  of all 100 users can be obtained through this stored procedure. <br>
+  
+  <li><b>Get_User</b></li>
+  This stored procedure is used to get the details of a specific user from the table. That means there are 100 users in the table as 
+  mentioned above, but we need to get the details of the 50 users in the table, so we can pass     either the name of the user or the id 
+  of the user and get the details of the user out of the table using this stored procedure.<br>
+  
+  <li><b>Save_User</b></li>
+  This stored procedure is used to insert a record into the user table. That means to enter the details of a new user, we can use 
+  this stored procedure.<br>
+  
+  <li><b>Update_User</b></li>
+  This stored procedure is used to update the records within the user table. That means that if the user who holds 
+  the ID number 50 entered his or her name wrong, we need to change the name of the 50th user in the table. We can   do that by 
+  using this stored procedure and by using the ID number of the user within the table.
+</ul>
+
+## Create-StoredProcedures #Branch
+
+This branch contains the tables, the stored procedures, and a.sql file that contains the execute statement for the stored procedures. 
+By using the statement given in this file, we can execute the above-mentioned stored procedures. <br> <br> We can add a new user to the [User] table using the 
+Save_User stored procedure, while we can update any record within the database using the Update_User stored procedure, and we can get the details of 
+the users in the User table using the Get_AllUsers stored procedure and the Get_User stored procedure.
+
+
+
+
+
+
+
+
+
+
