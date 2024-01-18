@@ -29,7 +29,8 @@ All the things are separated into each branch as follows.
 ## Create-Table #Branch
 The create table branch contains the queries that are needed to create the table. There are two files named User.sql and UserBankAccount.sql 
 that contain two queries that are used to create the tables in the database. These two files contain just the queries that are needed to create 
-the tables; they are not stored procedures. These two tables are just two tables that are used to store user details and the user’s bank details within a database. 
+the tables; they are not stored procedures. These two tables are just two tables that are used to store user details and the user’s bank details within a database. <br> <br>
+These queries can be seen in the [dbo] folder in the repository.
 
 <h4>User Table</h4>
 The [user] table contains four columns, just as shown as follows: Id is the primary key of the user table, and it is set to auto-increment the 
@@ -65,8 +66,8 @@ has a relationship with the User table’s ID column. <br>
 ## Create-StoredProcedures #Branch
 This branch contains the stored procedures themselves. This blog explains the creation of stored procedures in detail, while there is a small 
 explanation of the stored procedure creation inside of each.sql file located within this branch. There are four stored procedures to save, update, 
-and read the data in the [User] table. Stored procedures can be explained as follows:
-
+and read the data in the [User] table. Stored procedures can be explained as follows: <br><br>
+These stored procedures can be seen in the [dbo] folder in the repository.
 <ul>
   <li><b>Get_AllUsers</b></li>
   This stored procedure is used to get the details of all of the users in the table. That means if there are 100 users in the table, Details 
@@ -92,7 +93,8 @@ and read the data in the [User] table. Stored procedures can be explained as fol
 This branch contains the tables, the stored procedures, and a.sql file that contains the execute statement for the stored procedures. 
 By using the statement given in this file, we can execute the above-mentioned stored procedures. <br> <br> We can add a new user to the [User] table using the 
 Save_User stored procedure, while we can update any record within the database using the Update_User stored procedure, and we can get the details of 
-the users in the User table using the Get_AllUsers stored procedure and the Get_User stored procedure.
+the users in the User table using the Get_AllUsers stored procedure and the Get_User stored procedure. <br><br>
+The .sql file can be seen in the execute folder.
 
 
 
