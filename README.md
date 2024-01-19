@@ -1,5 +1,5 @@
 # Stored-Procedures-SQL-Server
-This GitHub repository was created for the blog post "What is stored procedure?" in Medium, and this repository 
+This GitHub repository was created for the <a href="https://medium.com/@mmweerarathna123/stored-procedures-sql-server-ab5fd50c9094"> blog post "What is stored procedure?" in Medium?</a>, and this repository 
 contains two tables named User and UserBankAccount. The structure of the tables are mentioned in the following paragraphs, 
 along with the details. Other than the tables, four stored procedures were created to save, update, read, and delete the 
 user data and UserBankAccount data within the database. then there is an extra file with SQL Queries that executes the created 
@@ -64,7 +64,7 @@ has a relationship with the User table’s ID column. <br>
 |CashAmount | decimal(18, 2) |
 
 ## Create-StoredProcedures #Branch
-This branch contains the stored procedures themselves. This blog explains the creation of stored procedures in detail, while there is a small 
+This branch contains the stored procedures themselves. <a href="https://medium.com/@mmweerarathna123/how-to-create-a-stored-procedure-sql-server-edc3e987668f">This blog explains the creation of stored procedures in detail</a>, while there is a small 
 explanation of the stored procedure creation inside of each.sql file located within this branch. There are four stored procedures to save, update, 
 and read the data in the [User] table. Stored procedures can be explained as follows: <br><br>
 These stored procedures can be seen in the [dbo] folder in the repository.
